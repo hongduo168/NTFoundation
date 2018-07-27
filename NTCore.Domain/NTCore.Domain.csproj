@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NTCore.DataAccess\NTCore.DataAccess.csproj" />
+    <ProjectReference Include="..\NTCore.DataModel\NTCore.DataModel.csproj" />
+    <ProjectReference Include="..\OpenCQRS\OpenCqrs\OpenCqrs.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Scrutor" Version="2.2.2" />
+  </ItemGroup>
+
+</Project>
